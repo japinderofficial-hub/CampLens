@@ -14,7 +14,7 @@ export function validateUpload(file: File): string | null {
     }
 
     if (file.size > MAX_FILE_SIZE_MB * 1024 * 1024) {
-        return "File size must be less than 5 MB";
+        return "File size must be 5 MB or smaller";
     }
 
     return null;
